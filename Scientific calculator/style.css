@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to right, white, white);
+  background: linear-gradient(to right, white);
 }
 
 #app {
@@ -54,6 +54,11 @@ body {
   outline: none;
 }
 
+.mode {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
 .equal-sign {
   background-color: black;

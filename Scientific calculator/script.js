@@ -1,5 +1,9 @@
 let app = new Vue({
   el: '#app',
+  data() {
+    return {
+      current: ''};
+
   },
   methods: {
     press: function (event) {
@@ -23,22 +27,6 @@ let app = new Vue({
       } else if (key === 'C') {
 
         me.current = '';
-
-      } else if (key === '*') {
-
-        me.current += '*';
-
-      } else if (key === '/') {
-
-        me.current += '/';
-
-      } else if (key === '+') {
-
-        me.current += '+';
-
-      } else if (key === '-') {
-
-        me.current += '-';
 
       } else if (key === '±') {
 
@@ -115,10 +103,14 @@ let app = new Vue({
 
         me.current = me.current * (Math.PI / 180);
 
-      } else if (key === '∘') {
+      } else if (key === 'deg') {
 
         me.current = me.current * (180 / Math.PI);
 
       }
+      else
+      {
+        me.current += key
+      }
     },
-    } });
+   } });

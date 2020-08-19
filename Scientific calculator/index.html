@@ -11,10 +11,11 @@
 <body>
 
 <div id="app">
-  <div class="calculator">  
+  <div class="calculator">
     <div class="results">
       <input class="input" v-model="current" />
     </div>
+    <div class="mode">
       <button class="button" @click="press">sin</button>
       <button class="button" @click="press">cos</button>
       <button class="button" @click="press">tan</button>
@@ -47,13 +48,13 @@
       <button class="button" @click="press">±</button>
       <button class="button" @click="press">0</button>
       <button class="button" @click="press">.</button>
-      <button class="button" @click="press">&#x003C0;</button>
+      <button class="button" @click="press">π</button>
       <button class="button" @click="press">+</button>
       <button class="button equal-sign" @click="press">=</button>
+    </div>
   </div>
 </div>
-<!-- partial -->
- <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script><script  src="script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script><script  src="script.js"></script>
 
 </body>
 </html>
