@@ -1,0 +1,28 @@
+.form-control {
+  background-color: #b3d4fc;
+  color: black;
+  margin: 10px 2px;
+  border: 100px;
+  scroll-padding-inline-start: 10%;
+  box-shadow: antiquewhite;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.form{
+  background: white;
+  border: 100px;
+}
+
+.form-control:hover {
+  opacity:1;
+}
+
+input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+

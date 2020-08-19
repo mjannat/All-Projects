@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Getting Data
+  </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<h1>Get The List</h1>
+<table style="width:100%">
+  <tr>
+    <th>product_id</th>
+    <th>product_name</th>
+    <th>barcode</th>
+  </tr>
+  <tbody id="table">
+</table>
+<br/>
+<body class="container">
+<h1> POST THE LIST </h1>
+<br/>
+<form class="form form-control" method="POST">
+  <label>Name</label>
+  <input type="text" class="form-control" id="name">
+  <br>
+  <label>Code</label>
+  <input type="text" class="form-control" id="code">
+  <br>
+  <label>Sub Category Id</label>
+  <input type="number" class="form-control" id="sub_category_id">
+  <br>
+  <label>Step Size</label>
+  <input type="number" class="form-control" id="step_size">
+  <br>
+  <label>Purchase Price</label>
+  <input type="number" class="form-control" id="purchase_price">
+  <br/>
+  <br/>
+  <button type="submit" class="submited" id="submit">Submit</button>
+</form>
+
+</body>
+<script src="api.js"></script>
+</html>
+
+
